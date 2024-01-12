@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@1,900&display=swap');
+body{
+    font-family: Poppins;
+    background-color: #000;
+    color: #eee;
+    margin: 0;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    color: #eee;
+}
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+header a{
+    margin-right: 40px;
+    color: #f1683a;
+}
+header a:hover{
+    background-color: #2e2e2e44;
+}
+/* carousel */
+.carousel{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -50px;
+    position: relative;
+}
+.carousel .list .item{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.carousel .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel .list .item .content{
+    position: absolute;
+    top: 40%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+}
+.carousel .list .item .content .author{
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-left: 30px;
+}
+.carousel .author{
+    color: #000;
+    background-color: gold;
+    box-shadow: 0 0 10px gold, 0 0 40px gold, 0 0 80px gold;
+    width: 70px;
+    text-shadow: #000;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.carousel .list .item .content .title{
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1em;
+    color: #f1683a;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.carousel .des{
+    font-size: 2em;
+    color: gold;
+}
+.carousel .list .item:nth-child(1){
+    z-index: 1;
+}
+.carousel .list .item:nth-child(1) .author,
+.carousel .list .item:nth-child(1) .title,
+.carousel .list .item:nth-child(1) .des{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.carousel .list .item:nth-child(1) .title{
+    animation-delay: 1.2s;
+}
+.carousel .list .item:nth-child(1) .des{
+    animation-delay: 1.4s;
+}
+
+@media  screen and (max-width: 678px) {
+    .carousel .list .item .content{
+        padding-right: 0;
+    }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+    }
+    header a{
+        margin-right: 20px;
+    }
+    .carousel .des{
+        font-size: 1.5em;
+    }
+}
