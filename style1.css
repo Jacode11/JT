@@ -332,7 +332,7 @@ header a:hover{
     .thumbnail .des{
         font-size: 1.5em;
     }
-    .thumbnail{
+    /*.thumbnail{
         justify-content: start;
-    }
+    }*/
 }
