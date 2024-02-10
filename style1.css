@@ -6,10 +6,10 @@ body{
     margin: 0;
     font-size: 12px;
 }
-a{
+/*a{
     text-decoration: none;
     color: #eee;
-}
+}*/
 header{
     width: 1140px;
     max-width: 80%;
@@ -20,13 +20,13 @@ header{
     position: relative;
     z-index: 100;
 }
-header a{
+/*header a{
     margin-right: 40px;
     color: #f1683a;
 }
 header a:hover{
     background-color: #555;
-}
+}*/
 /* carousel */
 .carousel{
     width: 100vw;
@@ -38,11 +38,25 @@ header a:hover{
 .carousel .list .item{
     position: absolute;
     inset: 0 0 0 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
 }
 .carousel .list .item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.carousel .list .item::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        to top, #000 0.5%, transparent
+    );
 }
 .carousel .list .item .content{
     position: absolute;
@@ -55,34 +69,63 @@ header a:hover{
     box-sizing: border-box;
     color: #fff;
     text-shadow: 0 5px 10px #0004;
+    z-index: 1;
 }
 .carousel .list .item .content .author{
     font-weight: bold;
     letter-spacing: 10px;
     padding-bottom: 5px;
-}
-.carousel .author{
     color: gold;
 }
 .carousel .list .item .content .title{
     font-weight: bold;
+    letter-spacing: 5px;
     font-size: 5em;
     line-height: 1em;
     color: #f1683a;
-    letter-spacing: 5px;
+    list-style: 1.3em;
 }
-.carousel .des{
+.carousel .list .item .content .des{
     font-size: 2em;
     color: gold;
 }
+.carousel .list .item.active{
+    opacity: 1;
+    z-index: 10;
+}
+@keyframes showContent {
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}    
+.carousel .list .item.active .author:nth-child(1),
+.carousel .list .item.active .title,
+.carousel .list .item.active .des:nth-child(3) {
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .1s .2s ease-in-out 1 forwards;
+}
+.carousel .list .item.active .title{
+    animation-delay: 0.3s;
+}
+.carousel .list .item.active .des:nth-child(3){
+    animation-duration: 0.4s;
+}
+
+
+
 
 /* thumbnail */
 .carousel .thumbnail{
     position: absolute;
     bottom: 50px;
     left: 5%;
-    /*width: max-content;*/
+    width: max-content;
     width: 100%;
+    height: 250px;
     z-index: 11;
     display: flex;
     gap: 10px;
@@ -96,9 +139,9 @@ header a:hover{
     width: 150px;
     height: 220px;
     flex-shrink: 0;
-    filter: brightness(.7);
+    filter: brightness(.8);
     transition: .5s;
-    /*position: relative;*/
+    position: relative;
 }
 .carousel .thumbnail .item img{
     width: 100%;
@@ -107,13 +150,11 @@ header a:hover{
     border-radius: 20px;
 }
 .carousel .thumbnail .item.active{
-    filter: brightness(1.5);
+    filter: brightness(1.1);
 }
 .carousel .thumbnail .item .content{
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
+    inset: auto 10px 10px 10px;
 }
 .carousel .thumbnail .item .content .title{
     font-weight: bold;
@@ -123,6 +164,7 @@ header a:hover{
 }
 .thumbnail .des{
     font-size: 1.5em;
+    color: gold;
 }
 
 /* arrow */
@@ -263,53 +305,6 @@ header a:hover{
     pointer-events: none;
 }
 
-.carousel .list .item.active{
-    opacity: 1;
-    z-index: 10;
-}
-@keyframes showContent {
-    to{
-        transform: translateY(0);
-        filter: blur(0);
-        opacity: 1;
-    }
-}
-.carousel .list .item.active .author:nth-child(1),
-.carousel .list .item.active .title,
-.carousel .list .item.active .des:nth-child(3){
-    transform: translateY(30px);
-    filter: blur(20px);
-    opacity: 0;
-    animation: showContent .5s .7s ease-in-out 1 forwards;
-}
-.carousel .list .item.active .title{
-    animation-delay: 1s;
-}
-.carousel .list .item.active .des:nth-child(3){
-    animation-duration: 1.3s;
-}
-
-
-/* time */
-.carousel .time{
-    width: 0%;
-    height: 5px;
-    background-color: #f1683a;
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-}
-.carousel.next .time,
-.carousel.prev .time{
-    width: 100%;
-    animation: timeRunning 2s linear 1 forwards;
-}
-@keyframes timeRunning{
-    to{
-        width: 0;
-    }
-}
 
 
 
@@ -332,7 +327,7 @@ header a:hover{
     .thumbnail .des{
         font-size: 1.5em;
     }
-    /*.thumbnail{
+    .thumbnail{
         justify-content: start;
-    }*/
+    }
 }
