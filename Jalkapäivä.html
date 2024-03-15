@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -15,6 +15,7 @@
             <a href="Käsipäivä.html">Käsipäivä</a>
             <a href="RintaSelkä.html">Rinta/Selkä</a>
         </nav-->
+        
     </header>
 
     <!-- carousel -->
@@ -23,63 +24,83 @@
         <div class="list">
             <div class="item active">
                 <img src="img/jalka1.jpg">
+                
                 <div class="content">
+                    <div class="pieces">1/5</div>
                     <div class="author">REIDET</div>
                     <div class="title">JALKAPENKKI</div>
-                    
-                    <div class="des">
-                        3 X 12
-                    </div> 
+                    <div class="des">3 X 12</div>
+                         
+                    <div class="toggle">
+                      <div class="toggle-btn" onclick="Animatedtoggle()"></div> 
+                    </div>
+                    <div class="text"></div>
                 </div>
-
+                <script src="script/script1.js"></script>
+                
             </div>
             <div class="item">
                 <img src="img/jalka2.jpg">
                 <div class="content">
+                    <div class="pieces">2/5</div>
                     <div class="author">TAKAREIDET</div>
                     <div class="title">JALKAPENKKI</div>
-                    
-                    <div class="des">
-                        3 X 12
+                    <div class="des">3 X 12</div>
+                     
+                    <div class="toggle1">
+                        <div class="toggle-btn1" onclick="Animatedtoggle1()"></div>    
                     </div>
+                    <div class="text1"></div>
                 </div>
-
+                <script src="script/script2.js"></script>
             </div>
             <div class="item">
                 <img src="img/jalka3.jpg">
                 <div class="content">
+                    <div class="pieces">3/5</div>
                     <div class="author">REIDET/PAKARAT</div>
                     <div class="title">LEVYTANKO</div>
-                    
-                    <div class="des">
-                        3 X 12
+                    <div class="des">3 X 12</div>
+
+                    <div class="toggle2">
+                        <div class="toggle-btn2" onclick="Animatedtoggle2()"></div>    
                     </div>
+                    <div class="text2"></div>
+                    <script src="script/script3.js"></script>    
                 </div>
 
             </div>
             <div class="item">
                 <img src="img/jalka4.jpg">
                 <div class="content">
+                    <div class="pieces">4/5</div>
                     <div class="author">PAKARAT/SELKÄ</div>
                     <div class="title">LEVYTANKO</div>
-                    
-                    <div class="des">
-                        3 X 12
+                    <div class="des">3 X 12</div>
+
+                    <div class="toggle3">
+                        <div class="toggle-btn3" onclick="Animatedtoggle3()"></div>    
                     </div>
+                    <div class="text3"></div>
+                    <script src="script/script4.js"></script>  
                 </div>
             </div>
             <div class="item">
                 <img src="img/jalka5.jpg">
                 <div class="content">
+                    <div class="pieces">5/5</div>
                     <div class="author">POHKEET</div>
                     <div class="title">POHJEPENKKI</div>
-                    
-                    <div class="des">
-                        3 X 12
+                    <div class="des">3 X 12</div>
+
+                    <div class="toggle4">
+                        <div class="toggle-btn4" onclick="Animatedtoggle4()"></div>    
                     </div>
+                    <div class="text4"></div> 
+                    <script src="script/script5.js"></script>
                 </div>
             </div>
-            
+    >    
             
         </div>
         <!-- thumbnail -->
@@ -139,15 +160,16 @@
                     </div>
                 </div>
             </div>
-            
         </div>
         <!-- arrows -->
         <div class="arrows">
             <button id="prev"><</button>
             <button id="next">></button>
         </div>
+        
         <div class="time"></div>
     </div>
     <script src="script.js"></script>
+    
 </body>
 </html>
