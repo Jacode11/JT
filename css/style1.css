@@ -119,6 +119,21 @@ header a:hover{
     color: #ff0000;
     font-size: 50px;
 }
+.carousel .list .item .content .text5{
+    color: #ff0000;
+    font-size: 50px;
+}
+.carousel .list .item .content .text6{
+    color: #ff0000;
+    font-size: 50px;
+}
+.carousel .list .item .content .text7{
+    color: #ff0000;
+    font-size: 50px;
+}
+
+
+
 .carousel .list .item.active{
     opacity: 1;
     z-index: 10;
@@ -238,11 +253,17 @@ header a:hover{
     right: 40%;
 }*/
 
-.toggle {
+.toggle,
+.toggle1,
+.toggle2,
+.toggle3,
+.toggle4,
+.toggle5,
+.toggle6,
+.toggle7 {
     position: absolute;
     top: 0%;
     left: 70%;
-    
     display: flex;
     width: 80px;
     height: 40px;
@@ -251,7 +272,14 @@ header a:hover{
     z-index: 1;
     transition: 0,5s;
 }
-.toggle-btn {
+.toggle-btn,
+.toggle-btn1,
+.toggle-btn2,
+.toggle-btn3,
+.toggle-btn4,
+.toggle-btn5,
+.toggle-btn6,
+.toggle-btn7 {
     position: absolute;
     top: 5px;
     left: 5px;
@@ -262,143 +290,29 @@ header a:hover{
     cursor: pointer;
     transition: 0,5s;
 }
-.toggle.active {
+.toggle.active,
+.toggle1.active,
+.toggle2.active,
+.toggle3.active,
+.toggle4.active,
+.toggle5.active,
+.toggle6.active,
+.toggle7.active {
     background-color: aqua;
     box-shadow: 0 0 10px aqua, 0 0 40px aqua, 0 0 80px aqua;
 }
-.toggle.active .toggle-btn {
+.toggle.active .toggle-btn,
+.toggle1.active .toggle-btn1,
+.toggle2.active .toggle-btn2,
+.toggle3.active .toggle-btn3,
+.toggle4.active .toggle-btn4,
+.toggle5.active .toggle-btn5,
+.toggle6.active .toggle-btn6,
+.toggle7.active .toggle-btn7 {
     left: 45px;
     background: rgb(255, 0, 0);
 }
 
-.toggle1 {
-    position: absolute;
-    top: 0%;
-    left: 70%;
-    
-    display: flex;
-    width: 80px;
-    height: 40px;
-    background-color: black;
-    border-radius: 30px;
-    z-index: 1;
-    transition: 0,5s;
-}
-.toggle-btn1 {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 30px;
-    height: 30px;
-    background-color: gold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0,5s;
-}
-.toggle1.active {
-    background-color: aqua;
-    box-shadow: 0 0 10px aqua, 0 0 40px aqua, 0 0 80px aqua;
-}
-.toggle1.active .toggle-btn1 {
-    left: 45px;
-    background: rgb(255, 0, 0);
-}
-.toggle2 {
-    position: absolute;
-    top: 0%;
-    left: 70%;
-    
-    display: flex;
-    width: 80px;
-    height: 40px;
-    background-color: black;
-    border-radius: 30px;
-    z-index: 1;
-    transition: 0,5s;
-}
-.toggle-btn2 {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 30px;
-    height: 30px;
-    background-color: gold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0,5s;
-}
-.toggle2.active {
-    background-color: aqua;
-    box-shadow: 0 0 10px aqua, 0 0 40px aqua, 0 0 80px aqua;
-}
-.toggle2.active .toggle-btn2 {
-    left: 45px;
-    background: rgb(255, 0, 0);
-}
-.toggle3 {
-    position: absolute;
-    top: 0%;
-    left: 70%;
-    
-    display: flex;
-    width: 80px;
-    height: 40px;
-    background-color: black;
-    border-radius: 30px;
-    z-index: 1;
-    transition: 0,5s;
-}
-.toggle-btn3 {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 30px;
-    height: 30px;
-    background-color: gold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0,5s;
-}
-.toggle3.active {
-    background-color: aqua;
-    box-shadow: 0 0 10px aqua, 0 0 40px aqua, 0 0 80px aqua;
-}
-.toggle3.active .toggle-btn3 {
-    left: 45px;
-    background: rgb(255, 0, 0);
-}
-.toggle4 {
-    position: absolute;
-    top: 0%;
-    left: 70%;
-    
-    display: flex;
-    width: 80px;
-    height: 40px;
-    background-color: black;
-    border-radius: 30px;
-    z-index: 1;
-    transition: 0,5s;
-}
-.toggle-btn4 {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 30px;
-    height: 30px;
-    background-color: gold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0,5s;
-}
-.toggle4.active {
-    background-color: aqua;
-    box-shadow: 0 0 10px aqua, 0 0 40px aqua, 0 0 80px aqua;
-}
-.toggle4.active .toggle-btn4 {
-    left: 45px;
-    background: rgb(255, 0, 0);
-}
 
 
 

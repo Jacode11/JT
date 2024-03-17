@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(img/monkey.jpg);
+    background-image: url(/img/batman.jpg);
     width: 100vw;
     background-size: cover;
 }
@@ -55,8 +55,8 @@ body {
     position: absolute;
     top: 0;
     inset: 0;
-}
-.borderline::before
+}/*
+/*.borderline::before
 {
     content: "";
     position: absolute;
@@ -198,4 +198,21 @@ body {
 .box .form input[type="submit"]:active
 {
     opacity: 0.8;
+}
+
+
+@media  screen and (max-width: 678px) {
+    img {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media  screen and (max-width: 378px) {
+    image {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }

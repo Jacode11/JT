@@ -59,8 +59,7 @@ header a:hover{
 }
 .carousel .list .item .content .author{
     font-weight: bold;
-    letter-spacing: 5px;
-    padding-left: 30px;
+    letter-spacing: 10px;
 }
 .carousel .author{
     color: #000;
@@ -70,15 +69,12 @@ header a:hover{
     text-shadow: #000;
     border-radius: 2px;
     padding: 10px;
-    margin-bottom: 20px;
 }
 .carousel .list .item .content .title{
     font-weight: bold;
     font-size: 5em;
     line-height: 1em;
     color: #f1683a;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
 }
 .carousel .des{
     font-size: 2em;
@@ -116,20 +112,8 @@ header a:hover{
     .carousel .list .item .content .title{
         font-size: 30px;
     }
-    header{
-        margin-left: 20px;
-        margin-right: 20px;
-        width: 400px;
-        
-    }
-    header nav{
-        width: 400px;
-        height: 40px;
-        padding-top: 20px;
-    }
     header a{
-        margin-right: 15px;
-        font-size: 16px;
+        margin-right: 20px;
     }
     .carousel .des{
         font-size: 1.5em;
