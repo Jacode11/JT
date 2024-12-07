@@ -23,7 +23,7 @@ header{
     z-index: 100;
 }
 header a{
-    margin-right: 40px;
+    margin-right: 30px;
     color: #f1683a;
 }
 header a:hover{
@@ -132,7 +132,7 @@ header a:hover{
 
 }
 
-@media  screen and (max-width: 678px) {
+/*@media  screen and (max-width: 678px) {
     .carousel .content{
         padding-right: 0;
         margin-left: 10px;
@@ -146,13 +146,13 @@ header a:hover{
     .carousel .des{
         font-size: 1.5em;
     }
-}
+}*/
 
-@media  screen and (max-width: 390px) {
+/*@media  screen and (max-width: 390px) {
     /*.carousel {
         width: 100%;
     }*/
-    .carousel .content{
+    /*.carousel .content{
         padding-right: 0;
     }
     .carousel .content .title{
@@ -164,4 +164,4 @@ header a:hover{
     .carousel .des{
         font-size: 1.5em;
     }
-}
+}*/
