@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body {
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,6 +14,7 @@ body {
     background-size: cover;
 }
 .box {
+    
     position: relative;
     width: 380px;
     height: 420px;
