@@ -47,20 +47,7 @@ header a:hover{
     /*width: 100vw;
     height: 100vh;*/
 }
-.carousel::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url(../img/body1.jpg);
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
 
-    mask-image: url(../img/inkvideo-ezgif.com-loop-count.gif);
-    mask-size: cover;
-    mask-position: center;
-
-}
 /*.carousel .list .item{
     position: absolute;
     inset: 0 0 0 0;
@@ -114,7 +101,7 @@ header a:hover{
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent 1s 2s linear 1 forwards;
+    animation: showContent 0.5s 1s linear 1 forwards;
 }
 @keyframes showContent{
     to{
@@ -124,10 +111,25 @@ header a:hover{
     }
 }
 .carousel .content:nth-child(1) .title{
-    animation-delay: 2.4s;
+    animation-delay: 1s;
 }
 .carousel .content:nth-child(1) .des{
-    animation-delay: 2.6s;
+    animation-delay: 1,2s;
+}
+
+.carousel::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(../img/body1.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    mask-image: url(../img/inkvideo-ezgif.com-loop-count.gif);
+    mask-size: cover;
+    mask-position: center;
+
 }
 
 @media  screen and (max-width: 678px) {
@@ -147,9 +149,9 @@ header a:hover{
 }
 
 @media  screen and (max-width: 390px) {
-    .carousel {
+    /*.carousel {
         width: 100%;
-    }
+    }*/
     .carousel .content{
         padding-right: 0;
     }
