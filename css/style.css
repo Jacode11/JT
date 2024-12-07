@@ -126,7 +126,7 @@ header a:hover{
     background-position: center;
     z-index: -1;
 
-    mask-image: url(/img/inkvideoo.gif.gif);
+    mask-image: url(/img/inkvideoo.gif);
     mask-size: cover;
     mask-position: center;
 
