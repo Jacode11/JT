@@ -9,10 +9,27 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(../img/batman.jpg);
+    background-image: url(img/batman.jpg);
     width: 100vw;
     background-size: cover;
+    overflow: hidden;
+    transform-origin: center center;
+    animation: animate 10s ease-in-out infinite alternate;
 }
+
+@keyframes animate 
+{    
+    0%
+    {
+      transform: scale(1);
+    }  
+    100%
+    {
+      transform: scale(1.2);  
+    }  
+    
+}
+
 .box {
     
     position: relative;
@@ -199,6 +216,28 @@
 .box .form input[type="submit"]:active
 {
     opacity: 0.8;
+}
+
+svg path {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 0.1;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: textAnimation 4s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+    0% {
+        stroke-dashoffset: 50;
+    }
+    80% {
+        fill: transparent;
+    }
+    100% {
+        fill: #fff;
+        stroke-dashoffset: 0;
+    }
 }
 
 @media  screen and (max-width: 1024px) {

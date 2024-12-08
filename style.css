@@ -101,7 +101,7 @@ header a:hover{
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent 0.5s 1s linear 1 forwards;
+    animation: showContent 1s 2s linear 1 forwards;
 }
 @keyframes showContent{
     to{
@@ -111,22 +111,22 @@ header a:hover{
     }
 }
 .carousel .content:nth-child(1) .title{
-    animation-delay: 1s;
+    animation-delay: 2.4s;
 }
 .carousel .content:nth-child(1) .des{
-    animation-delay: 1,2s;
+    animation-delay: 2.8s;
 }
 
 .carousel::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url(../img/body1.jpg);
+    background-image: url(img/body1.jpg);
     background-size: cover;
     background-position: center;
     z-index: -1;
 
-    mask-image: url(../img/inkvideoo.gif);
+    mask-image: url(img/inkvideoo.gif);
     mask-size: cover;
     mask-position: center;
 
