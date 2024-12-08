@@ -118,7 +118,7 @@
     inset: 4px;
     /*background: #6d6d6d;*/
     backdrop-filter: blur(1px);
-    padding: 50px 40px;
+    padding: 50px 30px;
     border-radius: 8px;
     z-index: 2;
     display: flex;
