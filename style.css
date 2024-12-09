@@ -92,7 +92,7 @@ header a:hover{
     font-size: 2em;
     color: gold;
 }
-.carousel .content:nth-child(1){
+/*.carousel .content:nth-child(1){
     z-index: 1;
 }
 .carousel .content:nth-child(1) .author,
@@ -115,7 +115,7 @@ header a:hover{
 }
 .carousel .content:nth-child(1) .des{
     animation-delay: 2.8s;
-}
+}*/
 
 .banner::before {
     content: '';
@@ -128,8 +128,8 @@ header a:hover{
 
     mask-image: url(Ink-Transparent.png);
     mask-size: cover;
-    /*mask-position: left 50%;*/
-    left: -400px;
+    mask-position: center;
+    /*left: -400px;*/
 
 }
 
