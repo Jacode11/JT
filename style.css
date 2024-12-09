@@ -6,7 +6,7 @@ body{
     background-color: #000;
     color: #eee;
     margin: 0;
-    font-size: 12px;
+    /*font-size: 12px;*/
 }
 a{
     text-decoration: none;
@@ -23,7 +23,7 @@ header{
     z-index: 100;
 }
 header a{
-    margin-right: 30px;
+    margin-right: 20px;
     color: #f1683a;
 }
 header a:hover{
@@ -38,7 +38,7 @@ header a:hover{
     position: relative;
 }*/
 
-.carousel {
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,11 +69,11 @@ header a:hover{
     color: #fff;
     text-shadow: 0 5px 10px #0004;
 }*/
-.carousel .content .author{
+.banner .content .author{
     font-weight: bold;
     letter-spacing: 10px;
 }
-.carousel .author{
+.banner .author{
     color: #000;
     background-color: gold;
     box-shadow: 0 0 10px gold, 0 0 40px gold, 0 0 80px gold;
@@ -82,13 +82,13 @@ header a:hover{
     border-radius: 2px;
     padding: 10px;
 }
-.carousel .content .title{
+.banner .content .title{
     font-weight: bold;
     font-size: 5em;
     line-height: 1em;
     color: #f1683a;
 }
-.carousel .des{
+.banner .des{
     font-size: 2em;
     color: gold;
 }
@@ -117,7 +117,7 @@ header a:hover{
     animation-delay: 2.8s;
 }
 
-.carousel::before {
+.banner::before {
     content: '';
     position: absolute;
     inset: 0;
