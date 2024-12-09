@@ -57,7 +57,7 @@ header a:hover{
     height: 100%;
     object-fit: cover;
 }*/
-.carousel .content{
+/*.carousel .content{
     position: absolute;
     top: 40%;
     width: 1140px;
@@ -68,7 +68,7 @@ header a:hover{
     box-sizing: border-box;
     color: #fff;
     text-shadow: 0 5px 10px #0004;
-}
+}*/
 .carousel .content .author{
     font-weight: bold;
     letter-spacing: 10px;
