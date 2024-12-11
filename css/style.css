@@ -6,7 +6,7 @@ body{
     background-color: #000;
     color: #eee;
     margin: 0;
-    /*font-size: 12px;*/
+    font-size: 15px;
 }
 a{
     text-decoration: none;
@@ -14,7 +14,7 @@ a{
 }
 header{
     width: 1140px;
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     height: 50px;
     display: flex;
@@ -92,12 +92,12 @@ header a:hover{
     font-size: 2em;
     color: gold;
 }
-/*.carousel .content:nth-child(1){
+.banner .content:nth-child(1){
     z-index: 1;
 }
-.carousel .content:nth-child(1) .author,
-.carousel .content:nth-child(1) .title,
-.carousel .content:nth-child(1) .des{
+.banner .content:nth-child(1) .author,
+.banner .content:nth-child(1) .title,
+.banner .content:nth-child(1) .des{
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
@@ -110,59 +110,59 @@ header a:hover{
         transform: translateY(0);
     }
 }
-.carousel .content:nth-child(1) .title{
+.banner .content:nth-child(1) .title{
     animation-delay: 2.4s;
 }
-.carousel .content:nth-child(1) .des{
+.banner .content:nth-child(1) .des{
     animation-delay: 2.8s;
-}*/
+}
 
 .banner::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url(body1.jpg);
+    background-image: url(../img/body1.jpg);
     background-size: cover;
     background-position: center;
     z-index: -1;
 
-    mask-image: url(Ink-Transparent.png);
+    mask-image: url(../img/inkvideoo.gif);
     mask-size: cover;
     mask-position: center;
-    /*left: -400px;*/
+    
 
 }
 
-/*@media  screen and (max-width: 678px) {
-    .carousel .content{
+@media  screen and (max-width: 678px) {
+    .banner .content{
         padding-right: 0;
         margin-left: 10px;
     }
-    .carousel .content .title{
+    .banner .content .title{
         font-size: 30px;
     }
     header a{
         margin-right: 20px;
     }
-    .carousel .des{
+    .banner .des{
         font-size: 1.5em;
     }
-}*/
+}
 
-/*@media  screen and (max-width: 390px) {
-    /*.carousel {
+@media  screen and (max-width: 390px) {
+    .banner {
         width: 100%;
-    }*/
-    /*.carousel .content{
+    }
+    .banner .content{
         padding-right: 0;
     }
-    .carousel .content .title{
+    .banner .content .title{
         font-size: 30px;
     }
     header a{
         margin-right: 20px;
     }
-    .carousel .des{
+    .banner .des{
         font-size: 1.5em;
     }
-}*/
+}

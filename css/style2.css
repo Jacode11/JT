@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(batman.jpg);
+    background-image: url(../img/batman.jpg);
     width: 100vw;
     background-size: cover;
     overflow: hidden;
